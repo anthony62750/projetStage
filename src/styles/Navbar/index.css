@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.navbar {
+  background-color: #191718;
+  padding: 40px;
+  text-align: center;
+}
+  
+nav a {
+  color: #e0e5e9;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+/* Style pour le lien actif */
+nav a.active {
+  color: #0a62d0
+}
