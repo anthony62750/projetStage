@@ -2,11 +2,7 @@ import React from 'react';
 
 import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import { Accueil } from './pages/Accueil';
-import { Apropos } from './pages/Apropos';
-import { Planning } from './pages/Planning';
-import { Inscription } from './pages/Inscription';
-import { Contact } from './pages/Contact';
+import { Accueil, Apropos, Planning, Inscription, Contact } from './pages';
 
 function App () {
   return (

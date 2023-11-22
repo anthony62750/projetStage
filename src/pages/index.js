@@ -1,0 +1,5 @@
+export * from "./Accueil"
+export * from "./Apropos"
+export * from "./Contact"
+export * from "./Inscription"
+export * from "./Planning"
