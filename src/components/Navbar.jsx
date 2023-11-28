@@ -19,35 +19,53 @@ const Navbar = () => {
         {/* Logo à gauche */}
         <div className='flex items-center'>
           <a href="/" ><img className='w-16 md:w-20' src={logo} alt="Logo"></img></a>
+          {/* Titre au milieu */}
+          <div className='text-[#E0E5E9] flex items-center lg:text-lg lg:text-xl ml-4'>
+            <h1>LA MERICOURTOISE</h1>
+          </div>
         </div>
-
-        {/* Titre au milieu */}
-        <div className='text-[#E0E5E9] flex items-center lg:text-lg lg:text-xl'>
-          <h1>LA MERICOURTOISE</h1>
+        {/* Liste des liens de navigation pour les pc */}
+        <div className="hidden lg:flex items-center">
+          <ul className="flex items-center">
+            <li className={`p-3 md:p-5 ml-3 md:ml-20 ${pathname === '/Apropos' ? 'text-[#0a62d0]' : 'text-[#E0E5E9] hover:text-[#0a62d0]'}`}>
+              <a href="/Apropos">À Propos</a>
+            </li>
+            <li className={`p-3 md:p-5 ml-3 md:ml-20 ${pathname === '/Planning' ? 'text-[#0a62d0]' : 'text-[#E0E5E9] hover:text-[#0a62d0]'}`}>
+              <a href="/Planning">Planning</a>
+            </li>
+            <li className={`p-3 md:p-5 ml-3 md:ml-20 ${pathname === '/Inscription' ? 'text-[#0a62d0]' : 'text-[#E0E5E9] hover:text-[#0a62d0]'}`}>
+              <a href="/Inscription">Inscription</a>
+            </li>
+            <li className={`p-3 md:p-5 ml-3 md:ml-20 ${pathname === '/Contact' ? 'text-[#0a62d0]' : 'text-[#E0E5E9] hover:text-[#0a62d0]'}`}>
+              <a href="/Contact">Contact</a>
+            </li>
+          </ul>
         </div>
-
         {/* Bouton du menu hamburger pour les écrans mobiles et tablettes */}
         <div className="lg:hidden">
           <button className="p-2 bg-[#0a62d0] rounded" onClick={toggleMenu}>
             <FiMenu className="w-6 h-6 text-white"/>
           </button>
         </div>
-
-        {/* Liste des liens de navigation */}
-        <ul className={`lg:flex items-center ${menuOpen ? 'flex-col lg:flex-row lg:items-center' : 'hidden'}`}>
-          <li className={`p-3 md:p-5 ml-3 md:ml-20 ${pathname === '/Apropos' ? 'text-[#0a62d0]' : 'text-[#E0E5E9] hover:text-[#0a62d0]'}`}>
-            <a href="/Apropos" onClick={toggleMenu}>À Propos</a>
-          </li>
-          <li className={`p-3 md:p-5 ml-3 md:ml-20 ${pathname === '/Planning' ? 'text-[#0a62d0]' : 'text-[#E0E5E9] hover:text-[#0a62d0]'}`}>
-            <a href="/Planning" onClick={toggleMenu}>Planning</a>
-          </li>
-          <li className={`p-3 md:p-5 ml-3 md:ml-20 ${pathname === '/Inscription' ? 'text-[#0a62d0]' : 'text-[#E0E5E9] hover:text-[#0a62d0]'}`}>
-            <a href="/Inscription" onClick={toggleMenu}>Inscription</a>
-          </li>
-          <li className={`p-3 md:p-5 ml-3 md:ml-20 ${pathname === '/Contact' ? 'text-[#0a62d0]' : 'text-[#E0E5E9] hover:text-[#0a62d0]'}`}>
-            <a href="/Contact" onClick={toggleMenu}>Contact</a>
-          </li>
-        </ul>
+        {/* Menu hamburger pour les écrans mobiles et tablettes */}
+        {menuOpen && (
+          <div className="lg:hidden absolute top-full right-0 bg-[#191718] p-5 w-full">
+            <ul className="flex flex-col items-end">
+              <li className={`p-3 md:p-5 ml-3 md:ml-20 ${pathname === '/Apropos' ? 'text-[#0a62d0]' : 'text-[#E0E5E9] hover:text-[#0a62d0]'}`}>
+                <a href="/Apropos" onClick={toggleMenu}>À Propos</a>
+              </li>
+              <li className={`p-3 md:p-5 ml-3 md:ml-20 ${pathname === '/Planning' ? 'text-[#0a62d0]' : 'text-[#E0E5E9] hover:text-[#0a62d0]'}`}>
+                <a href="/Planning" onClick={toggleMenu}>Planning</a>
+              </li>
+              <li className={`p-3 md:p-5 ml-3 md:ml-20 ${pathname === '/Inscription' ? 'text-[#0a62d0]' : 'text-[#E0E5E9] hover:text-[#0a62d0]'}`}>
+                <a href="/Inscription" onClick={toggleMenu}>Inscription</a>
+              </li>
+              <li className={`p-3 md:p-5 ml-3 md:ml-20 ${pathname === '/Contact' ? 'text-[#0a62d0]' : 'text-[#E0E5E9] hover:text-[#0a62d0]'}`}>
+                <a href="/Contact" onClick={toggleMenu}>Contact</a>
+              </li>
+            </ul>
+          </div>
+        )}
       </nav>
     </header>
   );
