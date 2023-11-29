@@ -18,11 +18,11 @@ const Navbar = () => {
       <nav id="navbar" className='bg-[#191718] p-5 flex items-center justify-between'>
         {/* Logo à gauche */}
         <div className='flex items-center'>
-          <a href="/" ><img className='w-16 md:w-20' src={logo} alt="Logo"></img></a>
-          {/* Titre au milieu */}
-          <div className='text-[#E0E5E9] flex items-center lg:text-lg lg:text-xl ml-4'>
-            <h1>LA MERICOURTOISE</h1>
-          </div>
+          <a href="/" ><img className='w-16 md:w-20 xl:w-28' src={logo} alt="Logo"></img></a>
+        </div>
+        {/* Titre au milieu */}
+        <div className='text-[#E0E5E9] flex items-center lg:text-lg lg:text-xl ml-4'>
+          <h1>LA MERICOURTOISE</h1>
         </div>
         {/* Liste des liens de navigation pour les pc */}
         <div className="hidden lg:flex items-center">
@@ -50,7 +50,7 @@ const Navbar = () => {
         {/* Menu hamburger pour les écrans mobiles et tablettes */}
         {menuOpen && (
           <div className="lg:hidden absolute top-full right-0 bg-[#191718] p-5 w-full">
-            <ul className="flex flex-col items-end">
+            <ul className="flex flex-col text-center">
               <li className={`p-3 md:p-5 ml-3 md:ml-20 ${pathname === '/Apropos' ? 'text-[#0a62d0]' : 'text-[#E0E5E9] hover:text-[#0a62d0]'}`}>
                 <a href="/Apropos" onClick={toggleMenu}>À Propos</a>
               </li>
