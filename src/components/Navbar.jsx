@@ -13,18 +13,18 @@ const Navbar = () => {
     setMenuOpen(!menuOpen);
   };
 
+  // Mettez à jour l'état isHomePage lorsque le chemin change
   useEffect(() => {
-    // Mettez à jour l'état isHomePage lorsque le chemin change
     setIsHomePage(pathname === '/');
   }, [pathname]);
 
+  // Mettez à jour l'état isHomePage en fonction de la position de défilement
   const handleScroll = () => {
-    // Mettez à jour l'état isHomePage en fonction de la position de défilement
     setIsHomePage(window.scrollY === 0);
   };
 
+  // Ajoutez un écouteur d'événement de défilement lors de l'assemblage du composant
   useEffect(() => {
-    // Ajoutez un écouteur d'événement de défilement lors de l'assemblage du composant
     window.addEventListener('scroll', handleScroll);
 
     // Nettoyez l'écouteur d'événements lorsque le composant est démonté
