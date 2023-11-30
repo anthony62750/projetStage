@@ -6,7 +6,7 @@ import logo from "./logo.png";
 const Navbar = () => {
   const { pathname } = useLocation();
   const [menuOpen, setMenuOpen] = useState(false);
-  const [isHomePage, setIsHomePage] = useState(false);
+  const [isHomePage, setIsHomePage] = useState(pathname === '/');
 
   // Fonction pour basculer l'état du menu
   const toggleMenu = () => {
@@ -17,6 +17,21 @@ const Navbar = () => {
     // Mettez à jour l'état isHomePage lorsque le chemin change
     setIsHomePage(pathname === '/');
   }, [pathname]);
+
+  const handleScroll = () => {
+    // Mettez à jour l'état isHomePage en fonction de la position de défilement
+    setIsHomePage(window.scrollY === 0);
+  };
+
+  useEffect(() => {
+    // Ajoutez un écouteur d'événement de défilement lors de l'assemblage du composant
+    window.addEventListener('scroll', handleScroll);
+
+    // Nettoyez l'écouteur d'événements lorsque le composant est démonté
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []); // Déclenchez uniquement l'effet au montage du composant
 
   return (
     <header className={`bg-${isHomePage ? 'transparent' : '[#191718]'} flex-wrap drop-shadow-xl z-50 fixed top-0 w-full`}>
