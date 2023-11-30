@@ -1,13 +1,17 @@
 import React from 'react';
 
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import { Accueil, Apropos, Planning, Inscription, Contact } from './pages';
 
-function App () {
+const App = () => {
+  const location = useLocation();
+  const isHomePage = location.pathname === '/';
+
   return (
     <div>
-      <Navbar />
+      <Navbar isHomePage={isHomePage} />
+      <main>
       <Routes>
         <Route path='/' element={ <Accueil/> }/>
         <Route path='/Apropos' element={ <Apropos/> }/>
@@ -15,6 +19,7 @@ function App () {
         <Route path='/Inscription' element={ <Inscription/> }/>
         <Route path='/Contact' element={ <Contact/> }/>
       </Routes>
+      </main>
     </div>
   );
 }

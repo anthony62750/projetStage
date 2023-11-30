@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { FiMenu } from 'react-icons/fi'; // Utilisation de l'icône du menu depuis React Icons
 import logo from "./logo.png";
@@ -6,22 +6,28 @@ import logo from "./logo.png";
 const Navbar = () => {
   const { pathname } = useLocation();
   const [menuOpen, setMenuOpen] = useState(false);
+  const [isHomePage, setIsHomePage] = useState(false);
 
   // Fonction pour basculer l'état du menu
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
 
+  useEffect(() => {
+    // Mettez à jour l'état isHomePage lorsque le chemin change
+    setIsHomePage(pathname === '/');
+  }, [pathname]);
+
   return (
-    <header className='bg-[#191718] drop-shadow-xl z-50 fixed top-0 w-full'>
+    <header className={`bg-${isHomePage ? 'transparent' : '[#191718]'} flex-wrap drop-shadow-xl z-50 fixed top-0 w-full`}>
       {/* Barre de navigation */}
-      <nav id="navbar" className='bg-[#191718] p-5 flex items-center justify-between'>
+      <nav className={`p-5 flex items-center justify-between fixed w-full ${isHomePage ? 'bg-transparent' : 'bg-[#191718]'} `}>
         {/* Logo à gauche */}
         <div className='flex items-center'>
           <a href="/" ><img className='w-16 md:w-20 xl:w-28' src={logo} alt="Logo"></img></a>
         </div>
         {/* Titre au milieu */}
-        <div className='text-[#E0E5E9] flex items-center lg:text-lg lg:text-xl ml-4'>
+        <div className='text-[#E0E5E9] flex items-center lg:text-2xl ml-4 md:text-xl sm:text-lg'>
           <h1>LA MERICOURTOISE</h1>
         </div>
         {/* Liste des liens de navigation pour les pc */}
