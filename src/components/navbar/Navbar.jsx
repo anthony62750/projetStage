@@ -20,7 +20,7 @@ const Navbar = () => {
 
   // Mettez à jour l'état isHomePage en fonction de la position de défilement
   const handleScroll = () => {
-    setIsHomePage(window.scrollY === 0);
+    setIsHomePage(pathname === '/' && window.scrollY === 0);
   };
 
   // Ajoutez un écouteur d'événement de défilement lors de l'assemblage du composant
@@ -34,7 +34,7 @@ const Navbar = () => {
   }, []); // Déclenchez uniquement l'effet au montage du composant
 
   return (
-    <header className={`bg-${isHomePage ? 'transparent' : '[#191718]'} flex-wrap drop-shadow-xl z-50 fixed top-0 w-full`}>
+    <header className={`bg-${isHomePage ? 'transparent' : '[#191718]'} flex-wrap drop-shadow-xl z-50 fixed top-0 w-full bg-[#191718]`}>
       {/* Barre de navigation */}
       <nav className={`p-5 flex items-center justify-between fixed w-full ${isHomePage ? 'bg-transparent' : 'bg-[#191718]'} `}>
         {/* Logo à gauche */}

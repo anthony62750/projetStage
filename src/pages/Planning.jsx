@@ -1,10 +1,10 @@
 import React from 'react';
+import { Horaires } from '../components/page_planning/Horaires';
 
 export const Planning = () => {
   return (
-    <div className='mt-36'>
-      <h1>Planning</h1>
-     
+    <div>
+     <Horaires/>
     </div>
   );
 }
