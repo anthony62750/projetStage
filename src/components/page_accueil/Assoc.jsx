@@ -1,6 +1,6 @@
 import React from 'react';
-import image from './photo_assoc.jpg';
-import photo from './photo_nav.jpg';
+import photo from '../page_accueil/photo_nav.jpg';
+import image from '../page_accueil/photo_assoc.jpg';
 
 export const Assoc = () => {
     return (

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Assoc } from "../components/Assoc";
+import { Assoc } from "../components/page_accueil/Assoc";
 
 export const Accueil = () => {
   return (

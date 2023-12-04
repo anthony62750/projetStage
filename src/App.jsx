@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Routes, Route, useLocation } from 'react-router-dom';
-import Navbar from './components/Navbar';
+import Navbar from './components/navbar/Navbar';
 import { Accueil, Apropos, Planning, Inscription, Contact } from './pages';
 
 const App = () => {

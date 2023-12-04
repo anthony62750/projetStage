@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { FiMenu } from 'react-icons/fi'; // Utilisation de l'icône du menu depuis React Icons
-import logo from "./logo.png";
+import logo from "../navbar/logo.png";
 
 const Navbar = () => {
   const { pathname } = useLocation();
