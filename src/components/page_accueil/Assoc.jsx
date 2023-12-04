@@ -8,7 +8,7 @@ export const Assoc = () => {
     return (
         <div>
             <img className='' src={photo} alt='img'></img>
-                    <div className='flex justify-end lg:mr-10 w-139 h-127 rotate-90.03 '>
+                    <div className='flex justify-end lg:mr-10 lg:w-139 lg:h-127 rotate-90.03 '>
                         <img className='' src={logo1} alt='img'></img>
                     </div>
                 <section className='flex lg:text-lg justify-between'>
@@ -20,7 +20,7 @@ export const Assoc = () => {
                         <p>La Méricourtoise, une association dédiée à la promotion de la musculation en autonomie. Notre mission principale est d'offrir à nos membres un environnement propice à la pratique de la musculation, où ils peuvent atteindre leurs objectifs de remise en forme de manière autonome et efficace.</p>
                     </div>
                 </section>
-                    <div className='flex justify-center lg:mr-96 w-139 h-127 rotate-89.91'>
+                    <div className='flex justify-center lg:mr-96 lg:w-139 lg:h-127 rotate-89.91'>
                         <img className='' src={logo2} alt='img'></img>
                     </div>
         </div>
