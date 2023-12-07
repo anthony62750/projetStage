@@ -9,7 +9,9 @@ module.exports = {
       secondary: '#ecc94b',
     },
     screens: {
-  
+      'xs': '360px',
+      // => @media (min-width: 360px) { ... }
+
       'sm': '430px',
       // => @media (min-width: 430px) { ... }
 
