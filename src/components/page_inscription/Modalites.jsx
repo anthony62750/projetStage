@@ -3,10 +3,10 @@ import React from 'react';
 export const Modalites = () => {
     return (
         <div>
-            <section className='flex justify-between xs:text-xs xs:mt-32 xs:ml-1 sm:text-sm sm:mt-32 sm:ml-2 md:text-base md:mt-36 md:ml-4 lg:text-xl lg:mt-44 lg:ml-6'>
+            <section className='min-h-screen p-20 flex justify-between xs:text-xs xs:mt-32 xs:ml-1 sm:text-sm sm:mt-32 sm:ml-2 md:text-base md:mt-36 md:ml-4 lg:text-xl lg:ml-6'>
                 <div>
                     <h1 className='xs:text-xl sm:text-2xl md:text-3xl lg:text-4xl'>Modalités d'inscription: </h1><br></br>
-                    <p className='xs:text-xs sm:text-sm md:text-base lg:text-xl'>L'accès à nos installations est ouvert aux mineurs à partir de 16 ans, sous certaines conditions. Les mineurs de 16 ans doivent être accompagnés d'un tuteur déjà inscrit à la salle. Pour les mineurs âgés de 16 ans et demi, une autorisation parentale est requise en plus de la présence d'un parent au moment de l'inscription. Nous accordons une importance particulière à la sécurité et au bien-être de nos membres.<br></br>
+                    <p className='xs:text-xs sm:text-sm md:text-base lg:text-xl mt-3'>L'accès à nos installations est ouvert aux mineurs à partir de 16 ans, sous certaines conditions. Les mineurs de 16 ans doivent être accompagnés d'un tuteur déjà inscrit à la salle. Pour les mineurs âgés de 16 ans et demi, une autorisation parentale est requise en plus de la présence d'un parent au moment de l'inscription. Nous accordons une importance particulière à la sécurité et au bien-être de nos membres.<br></br>
 
                     Nous insistons sur l'importance d'apporter son propre matériel lors de chaque séances, notamment une serviette et une double paire de chaussures, cette dernière étant obligatoire pour garantir des conditions sanitaires optimales.<br></br>
 

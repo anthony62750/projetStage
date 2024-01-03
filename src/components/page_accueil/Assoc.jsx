@@ -6,7 +6,7 @@ import logo2 from '../page_accueil/Chevron2.png';
 
 export const Assoc = () => {
     return (
-        <div>
+        <div className='min-h-screen'>
             {/* photo de la nav */}
             <img className='' src={photo} alt='img'></img>
             {/* fleche droite */}
@@ -20,8 +20,8 @@ export const Assoc = () => {
                     <img className='w-full lg:h-[300px] lg:w-[1200px]' src={image} alt='img'></img>
                 </div>
                 {/* texte */}
-                <div className='lg:ml-16'>
-                    <h1 className='lg:text-4xl'>Bienvenue à La Méricourtoise.</h1><br></br>
+                <div className='lg:ml-12'>
+                    <h1 className='lg:text-4xl'>Bienvenue à La Méricourtoise, musculation en AUTONOMIE.</h1><br></br>
                     <p>La Méricourtoise, une association dédiée à la promotion de la musculation en autonomie. Notre mission principale est d'offrir à nos membres un environnement propice à la pratique de la musculation, où ils peuvent atteindre leurs objectifs de remise en forme de manière autonome et efficace.</p>
                 </div>
             </section>

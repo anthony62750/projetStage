@@ -1,10 +1,10 @@
 import React from 'react';
+import { A_propos } from "../components/page_apropos/A_propos";
 
 export const Apropos = () => {
   return (
-    <div className='mt-36'>
-      <h1>Apropos </h1>
-     
+    <div>
+      <A_propos/>
     </div>
   );
 }
