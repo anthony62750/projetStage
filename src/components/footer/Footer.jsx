@@ -9,7 +9,7 @@ const Footer = () => {
       <section className='w-full flex items-center p-1 justify-around bg-[#191718] xs:text-xs sm:text-sm md:text-base lg:text-xl'>
 
         <div className=''>
-          <p className='text-[#E0E5E9]'>2 Rue Du Loing</p> 
+          <p className='text-[#E0E5E9]'>Rue Jeannette Prin</p> 
           <p className='text-[#E0E5E9]'>62680 Mericourt</p>
         </div>
 

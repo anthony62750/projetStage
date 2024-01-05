@@ -3,7 +3,7 @@ import image from '../page_planning/image_horaires.jpg';
 
 export const Horaires = () => {
     return (
-        <section className='min-h-screen bg-cover h-screen flex bg-no-repeat ' style={{ backgroundImage: `url(${image})` }}>
+        <section className='min-h-screen bg-cover h-screen flex bg-no-repeat' style={{ backgroundImage: `url(${image})` }}>
             <div className='xs:mx-auto sm:mx-auto md:mx-auto lg:mx-auto max-w-xl h-fit mt-40 drop-shadow-2xl opacity-90 bg-[#E0E5E9]'>
                 <div className='overflow-x-auto'>
                 <table className='min-w-full border-collapse border-gray-300 xs:text-xs sm:text-sm md:text-base lg:text-xl'>

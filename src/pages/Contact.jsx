@@ -1,10 +1,10 @@
 import React from 'react';
+import { Formulaire } from '../components/page_contact/Formulaire';
 
 export const Contact = () => {
   return (
-    <div className='mt-36'>
-      <h1>Contact</h1>
-     
+    <div>
+      <Formulaire/>
     </div>
   );
 }

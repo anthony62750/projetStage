@@ -10,18 +10,18 @@ export const Assoc = () => {
             {/* photo de la nav */}
             <img className='' src={photo} alt='img'></img>
             {/* fleche droite */}
-                <div className='flex justify-end lg:mr-10 lg:w-139 lg:h-127 rotate-90.03'>
+                <div className='flex lg:justify-end md:justify-center sm:justify-center xs:justify-center lg:mr-10 lg:w-139 lg:h-127 rotate-90.03'>
                     <img className='' src={logo1} alt='img'></img>
                 </div>
             {/* photo et texte */}
-            <section className='flex lg:text-lg justify-between'>
+            <section className='flex xs:flex-col xs:flex-col-reverse xs:items-center sm:flex-col sm:flex-col-reverse sm:items-center sm:justify-center md:flex-col md:flex-col-reverse md:items-center lg:text-lg lg:flex-row lg:justify-between'>
                 {/* photo */}
                 <div className='lg:ml-6'>
-                    <img className='w-full lg:h-[300px] lg:w-[1200px]' src={image} alt='img'></img>
+                    <img className='w-full xs:h-[150px] xs:w-[300px] xs:mt-4 sm:h-[200px] sm:w-[350px] sm:mt-5 md:h-[250px] md:w-[400px] md:mt-6 lg:h-[300px] lg:w-[1200px]' src={image} alt='img'></img>
                 </div>
                 {/* texte */}
-                <div className='lg:ml-12'>
-                    <h1 className='lg:text-4xl'>Bienvenue à La Méricourtoise, musculation en AUTONOMIE.</h1><br></br>
+                <div className='xs:p-1 sm:p-2 md:p-3 lg:ml-12'>
+                    <h1 className=' xs:text-xl sm:text-2xl md:text-3xl lg:text-4xl'>Bienvenue à La Méricourtoise, musculation en AUTONOMIE.</h1><br></br>
                     <p>La Méricourtoise, une association dédiée à la promotion de la musculation en autonomie. Notre mission principale est d'offrir à nos membres un environnement propice à la pratique de la musculation, où ils peuvent atteindre leurs objectifs de remise en forme de manière autonome et efficace.</p>
                 </div>
             </section>
