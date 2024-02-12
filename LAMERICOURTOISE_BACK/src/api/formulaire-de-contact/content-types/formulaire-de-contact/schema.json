@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "formulaire_de_contacts",
+  "info": {
+    "singularName": "formulaire-de-contact",
+    "pluralName": "formulaire-de-contacts",
+    "displayName": "Formulaire de contact",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "firstName": {
+      "type": "string",
+      "required": true
+    },
+    "lastName": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "email",
+      "required": true,
+      "unique": true
+    },
+    "message": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

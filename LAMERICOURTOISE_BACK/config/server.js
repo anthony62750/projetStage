@@ -7,4 +7,10 @@ module.exports = ({ env }) => ({
   webhooks: {
     populateRelations: env.bool('WEBHOOKS_POPULATE_RELATIONS', false),
   },
+  settings: {
+    cors: {
+      enabled: true,
+      origin: ["http://localhost:3000"],  // Remplacez par l'URL de votre application React
+    },
+  },
 });

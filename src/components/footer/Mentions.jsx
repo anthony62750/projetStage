@@ -18,18 +18,31 @@ return (
 
         E-mail : fliyouette@hotmail.fr<br></br><br />
 
-        Propriété intellectuelle<br></br>
+        Hébergement : <br></br>
+        Le site est hébergé par HOSTINGER 1 Lordou Vironos Street 6023 Larnaca, Chypre<br></br><br />
 
-        Tous les contenus présents sur ce site, tels que les textes, les images et les vidéos, sont la propriété de Association la MERICOURTOISE, Musculation en autonomie et sont protégés par les lois sur le droit d'auteur.<br></br><br />
+        Directeur de publication : M.JERMOUL YACINE<br></br><br />
 
-        Collecte de données<br></br>
+        Propriété intellectuelle : <br></br>
 
-        En vous inscrivant à notre newsletter, vous consentez à la collecte et au traitement de vos données personnelles. Ces informations seront utilisées exclusivement dans le but de vous envoyer des informations sur nos activités, événements et actualités. Nous nous engageons à ne pas partager vos données avec des tiers sans votre consentement.<br></br><br />
+        L'ensemble du contenu présent sur le site de l'Association "La MERICOURTOISE", incluant les textes, images, graphiques, logos, et autres éléments, est la propriété exclusive de l'Association "La MERICOURTOISE" ou de ses fournisseurs de contenu, et est protégé par les lois nationales et internationales relatives à la propriété intellectuelle.<br></br><br />
 
-        Liens externes<br></br>
+        Protection des données personnelles : <br></br>
 
-        Ce site peut contenir des liens vers d'autres sites externes. Nous déclinons toute responsabilité quant au contenu de ces sites.<br></br><br />
+        Les informations personnelles collectées via le site de l'Association "La MERICOURTOISE" sont destinées à un usage interne. Conformément à la loi "Informatique et Libertés", vous disposez d'un droit d'accès, de modification, de rectification et de suppression des données vous concernant. Vous pouvez exercer ce droit en contactant l'Association à l'adresse : fliyouette@hotmail.fr.<br></br><br />
+
+        Liens externes : <br></br>
+
+        Le site de l'Association "La MERICOURTOISE" peut contenir des liens vers des sites externes. L'Association n'est pas responsable du contenu de ces sites, ni des éventuels dommages résultant de leur utilisation.<br></br><br />
+
+        Modification des mentions légales : <br></br>
+
+        L'Association "La MERICOURTOISE" se réserve le droit de modifier les présentes mentions légales à tout moment. Les utilisateurs sont invités à consulter régulièrement cette page pour prendre connaissance des éventuelles modifications.<br></br><br />
+
+        Contact : <br></br>
+
+        Pour toute question ou demande d'information concernant les mentions légales, veuillez contacter l'Association "La MERICOURTOISE" à l'adresse suivante : fliyouette@hotmail.fr.
     </p>
     </div>
-    )
-}
+    );
+};

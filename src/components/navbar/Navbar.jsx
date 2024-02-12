@@ -13,25 +13,25 @@ const Navbar = () => {
     setMenuOpen(!menuOpen);
   };
 
-  // Mettez à jour l'état isHomePage lorsque le chemin change
+  // Mise à jour l'état isHomePage lorsque le chemin change
   useEffect(() => {
     setIsHomePage(pathname === '/');
   }, [pathname]);
 
-  // Mettez à jour l'état isHomePage en fonction de la position de défilement
+  // Mise à jour l'état isHomePage en fonction de la position de défilement
   const handleScroll = () => {
     setIsHomePage(pathname === '/' && window.scrollY === 0);
   };
 
-  // Ajoutez un écouteur d'événement de défilement lors de l'assemblage du composant
+  // Ajout d'un écouteur d'événement de défilement lors de l'assemblage du composant
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
 
-    // Nettoyez l'écouteur d'événements lorsque le composant est démonté
+    // Nettoie l'écouteur d'événements lorsque le composant est démonté
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, []); // Déclenchez uniquement l'effet au montage du composant
+  },);
 
   return (
     <header className={`bg-${isHomePage ? 'transparent' : '[#191718]'} flex-wrap drop-shadow-xl z-50 fixed top-0 w-full bg-[#191718]`}>
@@ -90,6 +90,6 @@ const Navbar = () => {
       </nav>
     </header>
   );
-}
+};
 
 export default Navbar;

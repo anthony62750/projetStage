@@ -62,4 +62,4 @@ export const Horaires = () => {
             </div>
         </section>
     );
-}
+};
