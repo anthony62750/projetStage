@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+
+body{
+  background-color: #E0E5E9;
+}
+
 .mineur {
     display: none;
   }

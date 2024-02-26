@@ -87,31 +87,31 @@ export const Formulaire = () => {
  return (
     <div className="flex flex-col min-h-screen mt-16">
       
-      <div className="flex justify-center xs:text-base xs:mt-32 xs:ml-1 sm:text-base sm:ml-2 md:text-base md:ml-4 lg:text-xl lg:ml-6">
+      <div className="flex justify-center xxs:mt-24 xs:text-base xs:mt-32 xs:ml-1 sm:text-base sm:ml-2 md:text-base md:ml-4 lg:text-xl lg:ml-6">
         <p>Pour toute information supplémentaire ou pour nous contacter, veuillez remplir le formulaire ci-dessous. Nous vous répondrons dans les plus brefs délais. Merci !</p>
       </div>
 
       <main className="flex-grow flex items-center justify-center">
 
-        <form id="contactForm" onSubmit={handleFormSubmit} className=" md:w-[28rem] flex flex-col rounded border border-[#2b2728] items-center p-8 sm:w-[20rem]" method="post">
+        <form id="contactForm" onSubmit={handleFormSubmit} className=" xxs:w-[17rem] sm:w-[24rem] md:w-[28rem] flex flex-col rounded border border-[#2b2728] items-center p-8  " method="post">
 
           <label className="flex flex-col items-center justify-center">Prénom :
-            <input className={`rounded mt-4 w-80 h-10 text-center border ${errors.firstName ? 'text-[#FF0000]' : 'border-[#2b2728]'} focus:outline-none focus:ring-2 focus:ring-[#0a62d0] focus:border-transparent`} type="text" name="firstName" placeholder="Entrez votre prénom" onChange={handleInputChange}/>{errors.firstName && <span className="text-[#FF0000] mt-2 text-xs">{errors.firstName}</span>}
+            <input className={`rounded mt-4 w-80 h-10 text-center border xxs:w-[15rem] sm:w-[22rem] ${errors.firstName ? 'text-[#FF0000]' : 'border-[#2b2728]'} focus:outline-none focus:ring-2 focus:ring-[#0a62d0] focus:border-transparent`} type="text" name="firstName" placeholder="Entrez votre prénom" onChange={handleInputChange}/>{errors.firstName && <span className="text-[#FF0000] mt-2 text-xs">{errors.firstName}</span>}
           </label>
           <br />
 
           <label className="text-base flex flex-col items-center justify-center">Nom :
-            <input className={`rounded mt-4 w-80 h-10 text-center border ${errors.lastName ? 'text-[#FF0000]' : 'border-[#2b2728]'} focus:outline-none focus:ring-2 focus:ring-[#0a62d0] focus:border-transparent`} type="text" name="lastName" placeholder="Entrez votre Nom" onChange={handleInputChange}/>{errors.lastName && <span className="text-[#FF0000] mt-2 text-xs">{errors.lastName}</span>}
+            <input className={`rounded mt-4 w-80 h-10 text-center border xxs:w-[15rem] sm:w-[22rem] ${errors.lastName ? 'text-[#FF0000]' : 'border-[#2b2728]'} focus:outline-none focus:ring-2 focus:ring-[#0a62d0] focus:border-transparent`} type="text" name="lastName" placeholder="Entrez votre Nom" onChange={handleInputChange}/>{errors.lastName && <span className="text-[#FF0000] mt-2 text-xs">{errors.lastName}</span>}
           </label>
           <br />
 
           <label className="flex flex-col items-center justify-center">Adresse mail :
-            <input className={`rounded mt-4 w-80 h-10 text-center border ${errors.email ? 'text-[#FF0000]' : 'border-[#2b2728]'} focus:outline-none focus:ring-2 focus:ring-[#0a62d0] focus:border-transparent`} type="email" name="email" placeholder="Entrez votre adresse mail" onChange={handleInputChange}/>{errors.email && <span className="text-[#FF0000] mt-2 text-xs">{errors.email}</span>}
+            <input className={`rounded mt-4 w-80 h-10 text-center border xxs:w-[15rem] sm:w-[22rem] ${errors.email ? 'text-[#FF0000]' : 'border-[#2b2728]'} focus:outline-none focus:ring-2 focus:ring-[#0a62d0] focus:border-transparent`} type="email" name="email" placeholder="Entrez votre adresse mail" onChange={handleInputChange}/>{errors.email && <span className="text-[#FF0000] mt-2 text-xs">{errors.email}</span>}
           </label>
           <br />
 
           <label className="flex flex-col items-center justify-center">Message : 
-            <textarea className={`rounded mt-4 w-80 h-24 rows=15 resize-none text-center border ${errors.message ? 'text-[#FF0000]' : 'border-[#2b2728]'} focus:outline-none focus:ring-2 focus:ring-[#0a62d0] focus:border-transparent`} name="message" placeholder="Entrez votre message"onChange={handleInputChange}/>{errors.message && <span className="text-[#FF0000] mt-2 text-xs">{errors.message}</span>}
+            <textarea className={`rounded mt-4 w-80 h-24 rows=15 resize-none text-center border xxs:w-[15rem] sm:w-[22rem] ${errors.message ? 'text-[#FF0000]' : 'border-[#2b2728]'} focus:outline-none focus:ring-2 focus:ring-[#0a62d0] focus:border-transparent`} name="message" placeholder="Entrez votre message"onChange={handleInputChange}/>{errors.message && <span className="text-[#FF0000] mt-2 text-xs">{errors.message}</span>}
           </label>
           <br />
 

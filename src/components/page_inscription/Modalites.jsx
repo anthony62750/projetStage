@@ -41,8 +41,9 @@ export const Modalites = () => {
                     - Une assurance responsabilité civile,<br></br>
                     
                     <p> - Une attestation a faire copier aux parents des mineurs de 16 ans et demi : </p>
+
                     <button class=" justify-center items-center rounded pr-3 pl-3 mt-3 mb-3 mr-3 h-10 w-38 border text-[#000000] bg-[#0a62d0]" type='button' onClick={() =>setIndex(index == 0 ? null : 0)}>Afficher le pdf</button>
-                    
+                     
                     <div className="mineur" >
                         <a className='text-[#0a62d0]' href={process.env.PUBLIC_URL + '/Autorisation_parentale.pdf'} target="_blank" rel="noopener noreferrer">Ouvrir le pdf</a><br></br>
                     </div>
